@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard | EduManage</title>
+
+    <link rel="stylesheet" href="teachers.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>EduManage</h2>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="teachers.html" class="active">
+                <i class="fa-solid fa-gauge"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="students.html">
+                <i class="fa-solid fa-user-graduate"></i>
+                Students
+            </a>
+        </li>
+
+        <li>
+            <a href="courses.html">
+                <i class="fa-solid fa-book-open"></i>
+                Courses
+            </a>
+        </li>
+
+        <li>
+            <a href="results.html">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                Results
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!--================ MAIN CONTENT ================-->
+
+<div class="main-content">
+
+<!--================ HEADER ================-->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <h2>Welcome, Teacher 👨‍🏫</h2>
+
+        <p>Teacher Dashboard</p>
+
+    </div>
+
+    <div class="profile-icon">
+
+        <i class="fa-solid fa-chalkboard-user"></i>
+
+    </div>
+
+</header>
+
+<!--================ TEACHER PROFILE ================-->
+
+<section class="teacher-profile">
+
+    <div class="profile-card">
+
+        <img src="images/teacher.png"
+             alt="Teacher">
+
+        <h2>Mr. Ahmed Khan</h2>
+
+        <p><strong>Department:</strong> Computer Science</p>
+
+        <p><strong>Employee ID:</strong> EMP-1025</p>
+
+        <p><strong>Email:</strong> ahmed@example.com</p>
+
+        <p><strong>Experience:</strong> 8 Years</p>
+
+        <button class="btn">
+            Edit Profile
+        </button>
+
+    </div>
+
+</section>
+
+<!--================ QUICK STATS ================-->
+
+<section class="quick-info">
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h3>180</h3>
+
+        <p>Total Students</p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-book"></i>
+
+        <h3>6</h3>
+
+        <p>Subjects</p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <h3>24</h3>
+
+        <p>Classes This Week</p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-file-lines"></i>
+
+        <h3>14</h3>
+
+        <p>Assignments</p>
+
+    </div>
+
+</section>
+<!--================ MY CLASSES ================-->
+
+<section class="teacher-classes">
+
+    <h2>My Classes</h2>
+
+    <div class="class-container">
+
+        <div class="class-card">
+
+            <h3>ICS Part-I</h3>
+
+            <p>Subject: Computer Science</p>
+            <p>Students: 45</p>
+
+        </div>
+
+        <div class="class-card">
+
+            <h3>ICS Part-II</h3>
+
+            <p>Subject: Programming Fundamentals</p>
+            <p>Students: 42</p>
+
+        </div>
+
+        <div class="class-card">
+
+            <h3>BS Computer Science</h3>
+
+            <p>Subject: Web Development</p>
+            <p>Students: 38</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ TODAY TIMETABLE ================-->
+
+<section class="teacher-timetable">
+
+    <h2>Today's Timetable</h2>
+
+    <table class="schedule-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Time</th>
+                <th>Class</th>
+                <th>Subject</th>
+                <th>Room</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>08:00 AM</td>
+                <td>ICS-I</td>
+                <td>Computer Science</td>
+                <td>Lab-1</td>
+
+            </tr>
+
+            <tr>
+
+                <td>10:00 AM</td>
+                <td>ICS-II</td>
+                <td>Programming</td>
+                <td>Lab-2</td>
+
+            </tr>
+
+            <tr>
+
+                <td>01:00 PM</td>
+                <td>BSCS</td>
+                <td>Web Development</td>
+                <td>Lab-3</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!--================ RECENT ACTIVITIES ================-->
+
+<section class="teacher-activities">
+
+    <h2>Recent Activities</h2>
+
+    <div class="activity-card">
+
+        <h3>✅ Attendance Submitted</h3>
+
+        <p>ICS Part-I attendance submitted successfully.</p>
+
+    </div>
+
+    <div class="activity-card">
+
+        <h3>📝 Assignment Uploaded</h3>
+
+        <p>HTML & CSS Assignment uploaded for BSCS students.</p>
+
+    </div>
+
+    <div class="activity-card">
+
+        <h3>📊 Results Updated</h3>
+
+        <p>Mid-Term Computer Science results published.</p>
+
+    </div>
+
+</section>
+
+<!--================ NOTIFICATIONS ================-->
+
+<section class="teacher-notifications">
+
+    <h2>Notifications</h2>
+
+    <div class="notification-card">
+
+        <p>📢 Staff meeting on Monday at 09:00 AM.</p>
+
+    </div>
+
+    <div class="notification-card">
+
+        <p>📚 Final examination schedule has been published.</p>
+
+    </div>
+
+    <div class="notification-card">
+
+        <p>🎓 Workshop on AI & Machine Learning next Friday.</p>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 EduManage Teacher Dashboard.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</div>
+
+<script src="teachers.js"></script>
+
+</body>
+</html>

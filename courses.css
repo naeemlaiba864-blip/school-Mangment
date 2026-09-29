@@ -1,0 +1,473 @@
+/*=========================================
+        COURSE SEARCH SECTION
+=========================================*/
+
+.course-search{
+    background:#ffffff;
+    padding:70px 8%;
+    text-align:center;
+}
+
+.course-search h2{
+    color:#0d6efd;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+#searchCourse{
+
+    width:100%;
+    max-width:600px;
+
+    padding:16px 22px;
+
+    border:2px solid #d9d9d9;
+
+    border-radius:50px;
+
+    outline:none;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+#searchCourse:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 10px rgba(13,110,253,.25);
+
+}
+
+/*=========================================
+            COURSES SECTION
+=========================================*/
+
+.courses{
+
+    background:#f4f8ff;
+
+    padding:80px 8%;
+
+}
+
+.courses h2{
+
+    text-align:center;
+
+    color:#0d6efd;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+/*=========================================
+          COURSE GRID
+=========================================*/
+
+.course-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/*=========================================
+          COURSE CARD
+=========================================*/
+
+.course-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    border-top:5px solid #0d6efd;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+          COURSE ICON
+=========================================*/
+
+.course-card i{
+
+    font-size:60px;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+
+}
+
+.course-card:hover i{
+
+    color:#ffc107;
+
+    transform:rotate(8deg);
+
+}
+
+/*=========================================
+          COURSE TITLE
+=========================================*/
+
+.course-card h3{
+
+    font-size:26px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+/*=========================================
+          COURSE DESCRIPTION
+=========================================*/
+
+.course-card p{
+
+    color:#666;
+
+    line-height:28px;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+          COURSE DETAILS
+=========================================*/
+
+.course-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin-bottom:25px;
+
+}
+
+.course-card ul li{
+
+    padding:8px 0;
+
+    color:#444;
+
+    border-bottom:1px solid #eee;
+
+    font-size:15px;
+
+}
+
+.course-card ul li:last-child{
+
+    border-bottom:none;
+
+}
+/*=========================================
+        ENROLL BUTTON
+=========================================*/
+
+.enroll-btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.enroll-btn:hover{
+
+    background:#ffc107;
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+        SCHOLARSHIP SECTION
+=========================================*/
+
+.scholarship{
+
+    background:linear-gradient(135deg,#0d6efd,#0056d6);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.scholarship h2{
+
+    color:#fff;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.scholarship p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    font-size:18px;
+
+    line-height:32px;
+
+    color:#f8f9fa;
+
+}
+
+.scholarship .btn{
+
+    background:#ffc107;
+
+    color:#000;
+
+}
+
+.scholarship .btn:hover{
+
+    background:#fff;
+
+    color:#0d6efd;
+
+}
+
+/*=========================================
+        COURSE CARD ANIMATION
+=========================================*/
+
+.course-card{
+
+    animation:courseFade .8s ease;
+
+}
+
+@keyframes courseFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+        COURSE CARD BORDER
+=========================================*/
+
+.course-card:hover{
+
+    border-top:5px solid #ffc107;
+
+}
+
+/*=========================================
+        COURSE HOVER TITLE
+=========================================*/
+
+.course-card:hover h3{
+
+    color:#0d6efd;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.course-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.course-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.course-search h2,
+.courses h2,
+.scholarship h2{
+
+    font-size:32px;
+
+}
+
+#searchCourse{
+
+    font-size:16px;
+
+}
+
+.course-card{
+
+    padding:25px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.course-search{
+
+    padding:60px 5%;
+
+}
+
+.courses{
+
+    padding:60px 5%;
+
+}
+
+.course-search h2,
+.courses h2,
+.scholarship h2{
+
+    font-size:28px;
+
+}
+
+.course-card h3{
+
+    font-size:22px;
+
+}
+
+.course-card i{
+
+    font-size:50px;
+
+}
+
+.course-card p{
+
+    font-size:15px;
+
+}
+
+.enroll-btn{
+
+    font-size:15px;
+
+}
+
+}
+
+/*=========================================
+        SEARCH INPUT HOVER
+=========================================*/
+
+#searchCourse:hover{
+
+    border-color:#0d6efd;
+
+}
+
+/*=========================================
+        COURSE SECTION SPACING
+=========================================*/
+
+.course-search,
+.courses,
+.scholarship{
+
+    scroll-margin-top:100px;
+
+}
+.cta .btn{
+
+    background:#ffffff;
+
+    color:#0d6efd;
+
+    border:2px solid #ffffff;
+
+}
+
+.cta .btn:hover{
+
+    background:#ffc107;
+
+    color:#000;
+
+    border-color:#ffc107;
+
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Result Management | EduManage</title>
+
+    <link rel="stylesheet" href="results.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <h2>Result Management System</h2>
+
+        <p>Search Student Result</p>
+
+    </div>
+
+    <div class="profile-icon">
+
+        <i class="fa-solid fa-square-poll-vertical"></i>
+
+    </div>
+
+</header>
+
+<!--================ SEARCH SECTION ================-->
+
+<section class="result-search">
+
+    <h2>Search Student</h2>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="studentSearch"
+            placeholder="Enter Roll Number">
+
+        <button id="searchBtn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--================ STUDENT INFORMATION ================-->
+
+<section class="student-result-info">
+
+    <div class="student-card">
+
+        <h2>Student Information</h2>
+
+        <p><strong>Name :</strong> Muhammad Ali</p>
+
+        <p><strong>Roll No :</strong> 2026-001</p>
+
+        <p><strong>Class :</strong> ICS Part-I</p>
+
+        <p><strong>Session :</strong> 2026</p>
+
+    </div>
+
+</section>
+
+<!--================ RESULT TABLE ================-->
+
+<section class="result-table-section">
+
+    <h2>Subject Wise Marks</h2>
+
+    <table class="result-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Subject</th>
+
+                <th>Total Marks</th>
+
+                <th>Obtained</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>English</td>
+
+                <td>100</td>
+
+                <td>88</td>
+
+                <td>Pass</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Mathematics</td>
+
+                <td>100</td>
+
+                <td>91</td>
+
+                <td>Pass</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Computer Science</td>
+
+                <td>100</td>
+
+                <td>95</td>
+
+                <td>Pass</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Physics</td>
+
+                <td>100</td>
+
+                <td>86</td>
+
+                <td>Pass</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Urdu</td>
+
+                <td>100</td>
+
+                <td>80</td>
+
+                <td>Pass</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+<!--================ RESULT SUMMARY ================-->
+
+<section class="result-summary">
+
+    <h2>Result Summary</h2>
+
+    <div class="summary-container">
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-calculator"></i>
+
+            <h3>Total Marks</h3>
+
+            <p id="totalMarks">500</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-pen"></i>
+
+            <h3>Obtained Marks</h3>
+
+            <p id="obtainedMarks">440</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-percent"></i>
+
+            <h3>Percentage</h3>
+
+            <p id="percentage">88%</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h3>Grade</h3>
+
+            <p id="grade">A+</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ RESULT STATUS ================-->
+
+<section class="result-status">
+
+    <div class="status-card">
+
+        <h2>Final Result</h2>
+
+        <h1 id="finalStatus">PASS ✅</h1>
+
+        <p>
+            Congratulations! You have successfully
+            passed all subjects.
+        </p>
+
+    </div>
+
+</section>
+
+<!--================ ACTION BUTTONS ================-->
+
+<section class="result-actions">
+
+    <button id="printResult" class="btn">
+
+        <i class="fa-solid fa-print"></i>
+
+        Print Result
+
+    </button>
+
+    <button id="downloadResult" class="btn">
+
+        <i class="fa-solid fa-download"></i>
+
+        Download Result
+
+    </button>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 EduManage Result Management System.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!--================ JAVASCRIPT ================-->
+
+<script src="results.js"></script>
+
+</body>
+
+</html>

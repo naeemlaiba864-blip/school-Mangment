@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | EduManage</title>
+
+    <link rel="stylesheet" href="students.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>EduManage</h2>
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="students.html" class="active">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="courses.html">
+
+                <i class="fa-solid fa-book"></i>
+
+                Courses
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="results.html">
+
+                <i class="fa-solid fa-square-poll-vertical"></i>
+
+                Results
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="fees.html">
+
+                <i class="fa-solid fa-money-bill"></i>
+
+                Fees
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="contact.html">
+
+                <i class="fa-solid fa-phone"></i>
+
+                Contact
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<!-- ================= TOP BAR ================= -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <h2>
+
+            Welcome Back 👋
+
+        </h2>
+
+        <p>
+
+            Student Dashboard
+
+        </p>
+
+    </div>
+
+    <div class="profile-icon">
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+    </div>
+
+</header>
+
+<!-- ================= PROFILE CARD ================= -->
+
+<section class="student-profile">
+
+    <div class="profile-card">
+
+        <img
+        src="images/student.png"
+        alt="Student">
+
+        <h2>
+
+            Muhammad Ali
+
+        </h2>
+
+        <p>
+
+            Roll No : 2026-001
+
+        </p>
+
+        <p>
+
+            Class : ICS - Part I
+
+        </p>
+
+        <p>
+
+            Email :
+            muhammad@example.com
+
+        </p>
+
+        <button class="btn">
+
+            Edit Profile
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= QUICK INFO ================= -->
+
+<section class="quick-info">
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <h3>
+
+            Attendance
+
+        </h3>
+
+        <p>
+
+            96%
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-book-open"></i>
+
+        <h3>
+
+            Subjects
+
+        </h3>
+
+        <p>
+
+            8 Subjects
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-money-check-dollar"></i>
+
+        <h3>
+
+            Fee Status
+
+        </h3>
+
+        <p>
+
+            Paid
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-award"></i>
+
+        <h3>
+
+            GPA
+
+        </h3>
+
+        <p>
+
+            3.82
+
+        </p>
+
+    </div>
+
+</section>
+<!-- ================= DASHBOARD STATISTICS ================= -->
+
+<section class="dashboard-stats">
+
+    <h2>Academic Overview</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-book"></i>
+
+            <h3>8</h3>
+
+            <p>Total Subjects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>12</h3>
+
+            <p>Assignments</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h3>A+</h3>
+
+            <p>Current Grade</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>95%</h3>
+
+            <p>Attendance</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="action-container">
+
+        <a href="courses.html" class="action-card">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h3>My Courses</h3>
+
+            <p>View enrolled courses</p>
+
+        </a>
+
+        <a href="results.html" class="action-card">
+
+            <i class="fa-solid fa-square-poll-vertical"></i>
+
+            <h3>Results</h3>
+
+            <p>Check exam results</p>
+
+        </a>
+
+        <a href="fees.html" class="action-card">
+
+            <i class="fa-solid fa-money-check-dollar"></i>
+
+            <h3>Fee Details</h3>
+
+            <p>View payment status</p>
+
+        </a>
+
+        <a href="contact.html" class="action-card">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>Support</h3>
+
+            <p>Contact administration</p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= ANNOUNCEMENTS ================= -->
+
+<section class="announcements">
+
+    <h2>Latest Announcements</h2>
+
+    <div class="announcement-card">
+
+        <h3>📢 Mid-Term Examination</h3>
+
+        <p>
+            Mid-term examinations will begin
+            from <strong>15 August 2026</strong>.
+            Students are advised to complete
+            their syllabus before the examination.
+        </p>
+
+    </div>
+
+    <div class="announcement-card">
+
+        <h3> Scholarship Program</h3>
+
+        <p>
+            Merit-based scholarship applications
+            are now open. Submit your application
+            before <strong>30 July 2026</strong>.
+        </p>
+
+    </div>
+
+    <div class="announcement-card">
+
+        <h3> Library Notice</h3>
+
+        <p>
+            The college library will remain open
+            until <strong>8:00 PM</strong> during
+            examination preparation week.
+        </p>
+
+    </div>
+
+</section>
+<!-- ================= TODAY'S SCHEDULE ================= -->
+
+<section class="today-schedule">
+
+    <h2>Today's Class Schedule</h2>
+
+    <table class="schedule-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Teacher</th>
+                <th>Room</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>08:00 AM</td>
+                <td>Computer Science</td>
+                <td>Mr. Ahmed</td>
+                <td>Lab-1</td>
+
+            </tr>
+
+            <tr>
+
+                <td>09:30 AM</td>
+                <td>Mathematics</td>
+                <td>Mr. Ali</td>
+                <td>Room-204</td>
+
+            </tr>
+
+            <tr>
+
+                <td>11:00 AM</td>
+                <td>Physics</td>
+                <td>Mrs. Fatima</td>
+                <td>Science Lab</td>
+
+            </tr>
+
+            <tr>
+
+                <td>01:00 PM</td>
+                <td>English</td>
+                <td>Ms. Sara</td>
+                <td>Room-102</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= UPCOMING TASKS ================= -->
+
+<section class="upcoming-tasks">
+
+    <h2>Upcoming Tasks</h2>
+
+    <div class="task-card">
+
+        <h3>📄 Web Development Assignment</h3>
+
+        <p>Submission Date: <strong>20 August 2026</strong></p>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>🧪 Physics Practical</h3>
+
+        <p>Practical Exam: <strong>18 August 2026</strong></p>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>📘 English Presentation</h3>
+
+        <p>Presentation Date: <strong>22 August 2026</strong></p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 EduManage Student Dashboard.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="students.js"></script>
+
+</body>
+</html>

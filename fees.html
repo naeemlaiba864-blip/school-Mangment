@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fee Management | EduManage</title>
+
+    <link rel="stylesheet" href="fees.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <h2>Fee Management System</h2>
+
+        <p>Manage Student Fee Records</p>
+
+    </div>
+
+    <div class="profile-icon">
+
+        <i class="fa-solid fa-money-check-dollar"></i>
+
+    </div>
+
+</header>
+
+<!--================ SEARCH STUDENT ================-->
+
+<section class="fee-search">
+
+    <h2>Search Student</h2>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="rollSearch"
+            placeholder="Enter Roll Number">
+
+        <button id="searchFeeBtn" class="btn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--================ STUDENT INFORMATION ================-->
+
+<section class="student-fee-info">
+
+    <div class="student-card">
+
+        <h2>Student Information</h2>
+
+        <p><strong>Name:</strong> Muhammad Ali</p>
+
+        <p><strong>Roll No:</strong> 2026-001</p>
+
+        <p><strong>Class:</strong> ICS Part-I</p>
+
+        <p><strong>Session:</strong> 2026</p>
+
+    </div>
+
+</section>
+
+<!--================ FEE SUMMARY ================-->
+
+<section class="fee-summary">
+
+    <h2>Fee Summary</h2>
+
+    <div class="summary-container">
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Total Fee</h3>
+
+            <p id="totalFee">Rs. 50,000</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>Paid Fee</h3>
+
+            <p id="paidFee">Rs. 35,000</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-hourglass-half"></i>
+
+            <h3>Remaining Fee</h3>
+
+            <p id="remainingFee">Rs. 15,000</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ FEE DETAILS ================-->
+
+<section class="fee-details">
+
+    <h2>Fee Details</h2>
+
+    <table class="fee-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Fee Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Admission Fee</td>
+                <td>Rs. 10,000</td>
+                <td>Paid</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Tuition Fee</td>
+                <td>Rs. 30,000</td>
+                <td>Paid</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Library Fee</td>
+                <td>Rs. 5,000</td>
+                <td>Paid</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Computer Lab Fee</td>
+                <td>Rs. 5,000</td>
+                <td>Pending</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!--================ PAYMENT STATUS ================-->
+
+<section class="payment-status">
+
+    <div class="status-card">
+
+        <h2>Payment Status</h2>
+
+        <h1 id="paymentStatus">PARTIALLY PAID</h1>
+
+        <p>
+
+            Due Date:
+            <strong id="dueDate">31 December 2026</strong>
+
+        </p>
+
+        <p>
+
+            Remaining Amount:
+            <strong id="remainingAmount">
+                Rs. 15,000
+            </strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--================ ACTION BUTTONS ================-->
+
+<section class="fee-actions">
+
+    <button class="btn" id="printReceipt">
+
+        <i class="fa-solid fa-print"></i>
+
+        Print Receipt
+
+    </button>
+
+    <button class="btn" id="downloadReceipt">
+
+        <i class="fa-solid fa-download"></i>
+
+        Download Receipt
+
+    </button>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 EduManage Fee Management System.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!--================ JAVASCRIPT ================-->
+
+<script src="fees.js"></script>
+
+</body>
+</html>
